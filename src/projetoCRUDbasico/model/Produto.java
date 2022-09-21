@@ -8,6 +8,16 @@ public class Produto {
     private Double preco;
     private String tipo;
 
+    public Produto() {}
+
+    public Produto(int id, String nome, String marca, Double preco, String tipo) {
+        this.id = id;
+        this.nome = nome;
+        this.preco = preco;
+        this.marca = marca;
+        this.tipo = tipo;
+    }
+
     public int getId() {
         return id;
     }

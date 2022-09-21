@@ -20,6 +20,14 @@ public class ProdutoService {
         return dao.findAll();
     }
 
+    public List<Produto> findByName(String nome) {
+        return dao.findByName(nome);
+    }
+
+    public List<Produto> findByTipo(String tipo) {
+        return dao.findByTipo(tipo);
+    }
+
     public boolean update(Produto produto) {
         return dao.update(produto);
     }
@@ -28,10 +36,9 @@ public class ProdutoService {
         return dao.deleteById(id);
     }
 
-    public boolean deleteAll() {
-        return dao.deleteAll();
+    public boolean deleteAll(List<Produto> produtos) {
+        return dao.deleteAll(produtos);
     }
-
     public Produto findById(long id) {
         return dao.findById(id);
 
