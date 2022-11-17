@@ -1,0 +1,24 @@
+Herança
+1. Herda os membros da classe pai, ou seja, atributos e métodos;
+2) Especializa uma classe;
+
+Pode gerar problemas de alta acoplação/dependencia, porque uma alteração na classe pai também alterará as classes filhas, um efeito dominó.
+
+O código tem que ter alta coesão e baixa acoplação.
+
+Exemplo:
+Pessoa: nome, email, telefone, matricula
+
+Aluno especializa Pessoa
+Aluno -> curso
+
+Funcionário especializa Pessoa
+Funcionário -> salário
+
+Professor especializa Funcionário
+Professor -> conhecimento técnico
+
+Supervisor Técnico especializa Funcionário
+Supervisor Técnico -> área de supervisão
+
+Se uma classe de um pacote especializa a outra de um pacote diferente então é subclasse, logo só pode usar ou public ou protected.
